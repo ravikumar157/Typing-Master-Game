@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="randomWordsContainer">
+        </div>
+        <div id="scoreboard">
+            <h2>Scoreboard</h2>
+            <div id="userScore">Score: <label id="scoreNumber">0</label></div>
+            <div id="userScore">Missed: <label id="missedNumber">0</label></div>
+            <button id="startButton" onclick=startGame()>Start</button>
+        </div>
+    </div>
+    <div id="gameOverModal">
+        <div class="modal-content">
+            <h2>Game Over!</h2>
+            <p>Your final score: <span id="finalScore">0</span></p>
+            <button id="restartButton" onclick="restartGame()">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
